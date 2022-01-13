@@ -34,7 +34,7 @@ h1 {
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
-    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transform: scale(1.05); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
@@ -68,7 +68,7 @@ p:hover {
 /* Center align elements hover effect - This only affects the quote, github link, and footer */
 .center:hover {
     transition: transform 2s; /* This makes the transform effect last 2 seconds */
-    transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+    transform: scale(1.02); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
 
 /* Anchor elements */
@@ -113,8 +113,8 @@ footer {
     top: 0px; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 1.75s; /* Safari 4.0 - 8.0 */
-    animation: moveNav 1.75s; /* This makes the moveNav animation last 1.75 seconds */
+    -webkit-animation: moveNav .5s; /* Safari 4.0 - 8.0 */
+    animation: moveNav .5s; /* This makes the moveNav animation last .5 seconds */
 }
 
 /* The animation effect for moving the nav bar in from above the left of the screen on page load */
@@ -134,8 +134,8 @@ footer {
     font-size: 1.5vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 2s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveNavText 2s; /* Applies the moveNavText animation for 2s */ 
+    -webkit-animation: moveNavText 1s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 1s; /* Applies the moveNavText animation for 2s */ 
 }
 
 /* The animation effect for moving the nav bar links in from above the top of the screen on page load */
@@ -150,7 +150,7 @@ footer {
     color: black; /* This defines the font color that will display when navbar a elements are hovered over */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
     cursor: pointer;
-    transition: 0.5s ease-in; /* Creates a smooth transition for the hover trigger */
+    transition: 0.1s ease-in; /* Creates a smooth transition for the hover trigger */
 }
 
 /* Navbar home button */
@@ -184,8 +184,8 @@ footer {
     height: 100vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
     padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveVideoText 3s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveVideoText 3s; /* moveVideoText animation set to 3s to match the movenavText animation */
+    -webkit-animation: moveVideoText 2s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveVideoText 2s; /* moveVideoText animation set to 3s to match the movenavText animation */
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
